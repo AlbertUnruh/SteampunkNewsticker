@@ -29,3 +29,14 @@ async function startTicker() {
 }
 
 startTicker();
+
+// Function to toggle fullscreen mode
+function toggleFullScreen() {
+    if (!document.fullscreen) {
+        document.documentElement.requestFullscreen().catch(err => {
+            console.error(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+        });
+    } else {
+        document.exitFullscreen();
+    }
+}
