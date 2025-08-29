@@ -1,20 +1,44 @@
+:root {
+    --egyptian-pyramid: #c19a7d;
+    --black-raspberry: #16110d;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+    overflow: hidden;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background: var(--egyptian-pyramid);
+}
+
 #ticker-container {
     display: flex;
     overflow: hidden;
     width: 100%;
     box-sizing: border-box;
-    background: #f0f0f0;
-    padding: 1em;
     font-family: Arial, sans-serif;
+    font-size: 3em;
+    color: var(--black-raspberry);
 }
+
 .ticker {
     white-space: nowrap;
     display: inline-block;
     animation: scroll linear infinite; /* Animation will be set dynamically */
 }
+
 .ticker span {
     padding: 1em;
 }
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
