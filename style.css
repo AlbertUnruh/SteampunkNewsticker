@@ -1,6 +1,7 @@
 :root {
     --egyptian-pyramid: #c19a7d;
     --black-raspberry: #16110d;
+    --alpha-gold: #ae8e5f;
 }
 
 html, body {
@@ -23,10 +24,12 @@ body {
     display: flex;
     overflow: hidden;
     width: 100%;
+    padding: 0.5em;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     font-size: 3em;
     color: var(--black-raspberry);
+    background: var(--alpha-gold);
 }
 
 .ticker {
