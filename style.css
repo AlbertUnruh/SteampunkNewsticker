@@ -1,0 +1,25 @@
+#ticker-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    background: #f0f0f0;
+    padding: 1em;
+    font-family: Arial, sans-serif;
+}
+.ticker {
+    white-space: nowrap;
+    display: inline-block;
+    animation: scroll linear infinite; /* Animation will be set dynamically */
+}
+.ticker span {
+    padding: 1em;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
